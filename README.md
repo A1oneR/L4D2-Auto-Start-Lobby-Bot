@@ -28,6 +28,8 @@
 1. 不要死盯着一个服务器磕开服（虽然他就应该这样盯着，目前脚本会从上往下轮询，所以代表着除非上面的服务器都有人了，不然最后一个服会始终得不到关爱。）
 2. 有时候游戏程序启动不正常（脚本想休息一会儿说是。）
 
+如果是在服务器上运行，断开连接时使用新增加的脚本。
+
 # Left 4 Dead 2 Auto-Server Starter Bot Script
 Created by Gemini 2.5 Pro. It's amazing how far AI has come; I was able to generate this script without having to learn PowerShell myself.
 
@@ -55,3 +57,5 @@ That's all.
 ### Potential Future Improvements:
 1. Prevent the script from getting stuck trying to start a single server. (Although its purpose is to keep trying. Currently, the script polls servers from top to bottom, meaning servers lower on the list won't get attention unless the ones above them are occupied.)
 2. Address occasional game startup failures (the script might need a break).
+
+Use the new bat to disconnect server if using the script on a server.
